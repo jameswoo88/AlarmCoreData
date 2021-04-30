@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3C7054263B4710001472A3 /* Alarm+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C7053263B4710001472A3 /* Alarm+Convenience.swift */; };
+		3B3C7057263B4794001472A3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C7056263B4794001472A3 /* CoreDataStack.swift */; };
+		3B3C705E263B48CF001472A3 /* AlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C705D263B48CF001472A3 /* AlarmController.swift */; };
+		3B3C7063263B53B0001472A3 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C7062263B53B0001472A3 /* AlarmTableViewCell.swift */; };
+		3B3C7067263B58BC001472A3 /* Date Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C7066263B58BC001472A3 /* Date Extension.swift */; };
+		3B3C706A263B5B11001472A3 /* AlarmListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C7069263B5B11001472A3 /* AlarmListTableViewController.swift */; };
+		3B3C706D263B5B88001472A3 /* AlarmDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C706C263B5B88001472A3 /* AlarmDetailTableViewController.swift */; };
+		3B3C7070263B6E46001472A3 /* AlarmScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C706F263B6E46001472A3 /* AlarmScheduler.swift */; };
 		FBF66FDA25B755D40038F7AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF66FD925B755D40038F7AC /* AppDelegate.swift */; };
 		FBF66FDC25B755D40038F7AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF66FDB25B755D40038F7AC /* SceneDelegate.swift */; };
 		FBF66FE125B755D40038F7AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF66FDF25B755D40038F7AC /* Main.storyboard */; };
@@ -16,6 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B3C7053263B4710001472A3 /* Alarm+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alarm+Convenience.swift"; sourceTree = "<group>"; };
+		3B3C7056263B4794001472A3 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		3B3C705D263B48CF001472A3 /* AlarmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmController.swift; sourceTree = "<group>"; };
+		3B3C7062263B53B0001472A3 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		3B3C7066263B58BC001472A3 /* Date Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date Extension.swift"; sourceTree = "<group>"; };
+		3B3C7069263B5B11001472A3 /* AlarmListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListTableViewController.swift; sourceTree = "<group>"; };
+		3B3C706C263B5B88001472A3 /* AlarmDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetailTableViewController.swift; sourceTree = "<group>"; };
+		3B3C706F263B6E46001472A3 /* AlarmScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmScheduler.swift; sourceTree = "<group>"; };
 		FBF66FD625B755D40038F7AC /* AlarmCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF66FD925B755D40038F7AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF66FDB25B755D40038F7AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +53,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B3C705A263B489E001472A3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B3C705C263B48BE001472A3 /* ModelControllers */,
+				3B3C705B263B48B6001472A3 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3B3C705B263B48B6001472A3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B3C7069263B5B11001472A3 /* AlarmListTableViewController.swift */,
+				3B3C706C263B5B88001472A3 /* AlarmDetailTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3B3C705C263B48BE001472A3 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B3C705D263B48CF001472A3 /* AlarmController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		3B3C7060263B537E001472A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B3C7061263B538D001472A3 /* Custom Views */,
+				FBF66FF425B7562C0038F7AC /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B3C7061263B538D001472A3 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B3C7062263B53B0001472A3 /* AlarmTableViewCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		3B3C7065263B58A2001472A3 /* Helper and Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3B3C7066263B58BC001472A3 /* Date Extension.swift */,
+			);
+			path = "Helper and Extension";
+			sourceTree = "<group>";
+		};
 		FBF66FCD25B755D40038F7AC = {
 			isa = PBXGroup;
 			children = (
@@ -57,8 +124,10 @@
 			isa = PBXGroup;
 			children = (
 				FBF66FF525B756350038F7AC /* Model */,
+				3B3C705A263B489E001472A3 /* Controllers */,
+				3B3C7060263B537E001472A3 /* Views */,
+				3B3C7065263B58A2001472A3 /* Helper and Extension */,
 				FBF66FF225B7561B0038F7AC /* Supporting Files */,
-				FBF66FF425B7562C0038F7AC /* Storyboards */,
 			);
 			path = AlarmCoreData;
 			sourceTree = "<group>";
@@ -70,6 +139,7 @@
 				FBF66FDB25B755D40038F7AC /* SceneDelegate.swift */,
 				FBF66FE525B755D60038F7AC /* Assets.xcassets */,
 				FBF66FEA25B755D60038F7AC /* Info.plist */,
+				3B3C706F263B6E46001472A3 /* AlarmScheduler.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -87,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				FBF66FE225B755D40038F7AC /* AlarmCoreData.xcdatamodeld */,
+				3B3C7056263B4794001472A3 /* CoreDataStack.swift */,
+				3B3C7053263B4710001472A3 /* Alarm+Convenience.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,9 +233,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3C7057263B4794001472A3 /* CoreDataStack.swift in Sources */,
 				FBF66FDA25B755D40038F7AC /* AppDelegate.swift in Sources */,
+				3B3C7067263B58BC001472A3 /* Date Extension.swift in Sources */,
 				FBF66FE425B755D40038F7AC /* AlarmCoreData.xcdatamodeld in Sources */,
 				FBF66FDC25B755D40038F7AC /* SceneDelegate.swift in Sources */,
+				3B3C7070263B6E46001472A3 /* AlarmScheduler.swift in Sources */,
+				3B3C7054263B4710001472A3 /* Alarm+Convenience.swift in Sources */,
+				3B3C7063263B53B0001472A3 /* AlarmTableViewCell.swift in Sources */,
+				3B3C706A263B5B11001472A3 /* AlarmListTableViewController.swift in Sources */,
+				3B3C706D263B5B88001472A3 /* AlarmDetailTableViewController.swift in Sources */,
+				3B3C705E263B48CF001472A3 /* AlarmController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +391,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7B9732LY;
+				DEVELOPMENT_TEAM = QEN666WPC7;
 				INFOPLIST_FILE = "AlarmCoreData/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -330,7 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7B9732LY;
+				DEVELOPMENT_TEAM = QEN666WPC7;
 				INFOPLIST_FILE = "AlarmCoreData/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
